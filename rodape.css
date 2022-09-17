@@ -1,0 +1,37 @@
+.rodape-bg{
+  background-color: #FABC2A;
+}
+.rodape{
+  background-color: inherit;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape a{
+  font-size: 2rem;
+  color: black;
+  max-width: 1300px;
+  position: relative;
+  display: flex;
+}
+
+.rodape a:hover{
+  color: #ff3c3c;
+}
+
+.rodape a:nth-child(2)::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url(github-svgrepo-com.svg) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 35%;
+  left: -28px;
+  top: 2px;
+}
+
+.rodape a:nth-child(2):hover::before{
+  filter: invert(30%) sepia(100%) saturate(1623%) hue-rotate(339deg) brightness(100%) contrast(102%);
+}
